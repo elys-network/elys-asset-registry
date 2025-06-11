@@ -1,20 +1,21 @@
 📊 Validation Report
 ===================
 
-**Date:** Tue Jun  3 22:54:42 UTC 2025
-**Commit:** ecc30efd1baa42596861b1cc40f9e92e8d7b27dc
+**Date:** Wed Jun 11 21:02:07 UTC 2025
+**Commit:** b1a04456c3c18950f92b989ce2a561aaeb4e48fe
 
 **Statistics:**
-- Mainnet chains: 16
+- Mainnet chains: 17
 - Testnet chains: 7
 - Devnet chains: 1
-- Mainnet currencies: 21
+- Mainnet currencies: 22
 - Testnet currencies: 11
 - Devnet currencies: 3
 
 **Chain Status:**
 | Chain | Network | Chain ID | Currencies |
 |-------|---------|----------|------------|
+| agoric-3 | mainnet | agoric-3 | 1 |
 | akashnet-2 | mainnet | akashnet-2 | 1 |
 | axelar-dojo-1 | mainnet | axelar-dojo-1 | 1 |
 | bbn-1 | mainnet | bbn-1 | 1 |
