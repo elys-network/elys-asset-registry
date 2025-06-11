@@ -1,4 +1,5 @@
 # Elys Asset Registry
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1z653.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 
 Official Elys Network asset registry providing standardized blockchain and token configurations for all Elys ecosystem projects. This registry serves as the single source of truth for chain metadata, RPC endpoints, token information, and feature capabilities across the entire Elys ecosystem.
 
