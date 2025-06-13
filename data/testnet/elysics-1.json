@@ -1,0 +1,42 @@
+{
+  "chainId": "elysics-1",
+  "chainName": "",
+  "addressPrefix": "",
+  "rpcURL": "",
+  "restURL": "",
+  "explorerURL": {
+    "transaction": ""
+  },
+  "channel": {
+    "source": "channel-1",
+    "destination": "channel-1"
+  },
+  "currencies": [
+    {
+      "coinDenom": "TRUMP",
+      "coinDisplayDenom": "TRUMP",
+      "coinMinimalDenom": "utrump",
+      "coinIbcDenom": "ibc/8FE2812BBCDB3546943EF3C48670971A8BC9883434EB486B0294E089C8014D1F",
+      "coinDecimals": 6,
+      "coinGeckoId": "",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": false,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": false,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "",
+        "exchange": ""
+      }
+    }
+  ]
+}
