@@ -1,42 +1,68 @@
 {
-    "chainId": "xion-mainnet-1",
-    "chainName": "Xion",
-    "addressPrefix": "xion",
-    "rpcURL": "https://rpc-xion.ottersync.io",
-    "restURL": "https://api-xion.ottersync.io",
-    "explorerURL": {
-        "transaction": "https://xion.explorers.guru/transaction/{transaction}"
+  "chainId": "xion-mainnet-1",
+  "chainName": "Xion",
+  "addressPrefix": "xion",
+  "rpcURL": "https://rpc-xion.ottersync.io",
+  "restURL": "https://api-xion.ottersync.io",
+  "explorerURL": {
+    "transaction": "https://xion.explorers.guru/transaction/{transaction}"
+  },
+  "channel": {
+    "source": "channel-8",
+    "destination": "channel-9"
+  },
+  "currencies": [
+    {
+      "coinDenom": "XION",
+      "coinDisplayDenom": "XION",
+      "coinMinimalDenom": "uxion",
+      "coinIbcDenom": "ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A",
+      "coinDecimals": 6,
+      "coinGeckoId": "xion",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0.001,
+        "average": 0.001,
+        "high": 0.01
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "mexc"
+      }
     },
-    "channel": {
-        "source": "channel-8",
-        "destination": "channel-9"
-    },
-    "currencies": [
-        {
-            "coinDenom": "XION",
-            "coinDisplayDenom": "XION",
-            "coinMinimalDenom": "uxion",
-            "coinIbcDenom": "ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A",
-            "coinDecimals": 6,
-            "coinGeckoId": "xion",
-            "isStakeCurrency": false,
-            "isFeeCurrency": true,
-            "canSwap": true,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": true,
-            "canUsePerpetual": false,
-            "canUseVaults": true,
-            "gasPriceStep": {
-                "low": 0.001,
-                "average": 0.001,
-                "high": 0.01
-            },
-            "cc": {
-                "quote": "USDT",
-                "exchange": "mexc"
-            }
-        }
-    ]
+    {
+      "coinDenom": "PEPE",
+      "coinDisplayDenom": "PEPE",
+      "coinMinimalDenom": "upepe",
+      "coinIbcDenom": "ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A",
+      "coinDecimals": 8,
+      "coinGeckoId": "",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": false,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": false,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "",
+        "exchange": ""
+      }
+    }
+  ]
 }
