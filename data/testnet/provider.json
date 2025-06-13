@@ -1,0 +1,68 @@
+{
+  "chainId": "provider",
+  "chainName": "Cosmos Hub (testnet)",
+  "addressPrefix": "cosmos",
+  "rpcURL": "https://rpc.provider-sentry-01.ics-testnet.polypore.xyz",
+  "restURL": "https://rest.provider-sentry-01.ics-testnet.polypore.xyz",
+  "explorerURL": {
+    "transaction": "https://explorer.polypore.xyz/provider/tx/{transaction}"
+  },
+  "channel": {
+    "source": "channel-1",
+    "destination": "channel-290"
+  },
+  "currencies": [
+    {
+      "coinDenom": "ATOM",
+      "coinDisplayDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
+      "coinIbcDenom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "coinDecimals": 6,
+      "coinGeckoId": "cosmos",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": true,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.025,
+        "high": 0.03
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
+    },
+    {
+      "coinDenom": "BONK",
+      "coinDisplayDenom": "BONK",
+      "coinMinimalDenom": "ubonk",
+      "coinIbcDenom": "ibc/8FE2812BBCDB3546943EF3C48670971A8BC9883434EB486B0294E089C8014D1F",
+      "coinDecimals": 6,
+      "coinGeckoId": "",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": false,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": false,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "",
+        "exchange": ""
+      }
+    }
+  ]
+}
