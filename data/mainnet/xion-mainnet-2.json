@@ -1,0 +1,42 @@
+{
+  "chainId": "xion-mainnet-2",
+  "chainName": "",
+  "addressPrefix": "",
+  "rpcURL": "",
+  "restURL": "",
+  "explorerURL": {
+    "transaction": ""
+  },
+  "channel": {
+    "source": "channel-8",
+    "destination": "channel-9"
+  },
+  "currencies": [
+    {
+      "coinDenom": "PEPE",
+      "coinDisplayDenom": "PEPE",
+      "coinMinimalDenom": "upepe",
+      "coinIbcDenom": "ibc/6BFB09FE2464A7681645610F56BBEFF555A00B8AE146339FEB4609BF40FB0F4A",
+      "coinDecimals": 8,
+      "coinGeckoId": "",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": false,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": false,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "",
+        "exchange": ""
+      }
+    }
+  ]
+}
