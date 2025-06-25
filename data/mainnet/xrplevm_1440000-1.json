@@ -1,5 +1,4 @@
 {
-  "chainNetwork": "mainnet",
   "chainId": "xrplevm_1440000-1",
   "chainName": "XRPL EVM",
   "addressPrefix": "ethm",
@@ -15,12 +14,11 @@
   "currencies": [
     {
       "coinDenom": "XRP",
+      "coinDisplayDenom": "XRP",
       "coinMinimalDenom": "axrp",
       "coinIbcDenom": "ibc/8464A63954C0350A26C8588E20719F3A0AC8705E4CA0F7450B60C3F16B2D3421",
       "coinDecimals": 18,
       "coinGeckoId": "xrp",
-      "exchangeData": "Binance",
-      "coinImageUrl": "/tokens/xrp.svg",
       "isStakeCurrency": false,
       "isFeeCurrency": true,
       "canSwap": true,
@@ -30,9 +28,6 @@
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
       "canUseVaults": true,
-      "bip44": {
-        "coinType": 60
-      },
       "cc": {
         "quote": "USDT",
         "exchange": "binance"
