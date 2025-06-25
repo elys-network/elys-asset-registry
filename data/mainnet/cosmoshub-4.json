@@ -128,18 +128,18 @@
       "isStakeCurrency": false,
       "canWithdraw": false,
       "canDeposit": false,
-      "canUseLiquidityMining": false,
-      "canUseLeverageLP": false,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
       "canUsePerpetual": false,
-      "canUseVaults": false,
+      "canUseVaults": true,
       "gasPriceStep": {
         "low": 0,
         "average": 0,
         "high": 0
       },
       "cc": {
-        "quote": "",
-        "exchange": ""
+        "quote": "USDT",
+        "exchange": "binance"
       }
     }
   ]
