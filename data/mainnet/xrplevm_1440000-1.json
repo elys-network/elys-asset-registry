@@ -1,0 +1,42 @@
+{
+  "chainId": "xrplevm_1440000-1",
+  "chainName": "",
+  "addressPrefix": "",
+  "rpcURL": "",
+  "restURL": "",
+  "explorerURL": {
+    "transaction": ""
+  },
+  "channel": {
+    "source": "channel-27",
+    "destination": "channel-1"
+  },
+  "currencies": [
+    {
+      "coinDenom": "XRP",
+      "coinDisplayDenom": "XRP",
+      "coinMinimalDenom": "axrp",
+      "coinIbcDenom": "ibc/8464A63954C0350A26C8588E20719F3A0AC8705E4CA0F7450B60C3F16B2D3421",
+      "coinDecimals": 18,
+      "coinGeckoId": "",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": false,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": false,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "",
+        "exchange": ""
+      }
+    }
+  ]
+}
