@@ -1,105 +1,146 @@
 {
-    "chainId": "cosmoshub-4",
-    "chainName": "Cosmos Hub",
-    "addressPrefix": "cosmos",
-    "rpcURL": "https://cosmos-rpc.publicnode.com:443",
-    "restURL": "https://cosmos-api.publicnode.com",
-    "explorerURL": {
-        "transaction": "https://mintscan.io/cosmos/transactions/{transaction}"
+  "chainId": "cosmoshub-4",
+  "chainName": "Cosmos Hub",
+  "addressPrefix": "cosmos",
+  "rpcURL": "https://cosmos-rpc.publicnode.com:443",
+  "restURL": "https://cosmos-api.publicnode.com",
+  "explorerURL": {
+    "transaction": "https://mintscan.io/cosmos/transactions/{transaction}"
+  },
+  "channel": {
+    "source": "channel-1",
+    "destination": "channel-1266"
+  },
+  "currencies": [
+    {
+      "coinDenom": "ATOM",
+      "coinDisplayDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
+      "coinIbcDenom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "coinDecimals": 6,
+      "coinGeckoId": "cosmos",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.025,
+        "high": 0.03
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
     },
-    "channel": {
-        "source": "channel-1",
-        "destination": "channel-1266"
+    {
+      "coinDenom": "ETH",
+      "coinDisplayDenom": "ETH",
+      "coinMinimalDenom": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "coinIbcDenom": "ibc/694A6B26A43A2FBECCFFEAC022DEACB39578E54207FDD32005CD976B57B98004",
+      "coinDecimals": 18,
+      "coinGeckoId": "ethereum",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
     },
-    "currencies": [
-        {
-            "coinDenom": "ATOM",
-            "coinDisplayDenom": "ATOM",
-            "coinMinimalDenom": "uatom",
-            "coinIbcDenom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-            "coinDecimals": 6,
-            "coinGeckoId": "cosmos",
-            "canSwap": true,
-            "isFeeCurrency": true,
-            "isStakeCurrency": false,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": true,
-            "canUsePerpetual": false,
-            "canUseVaults": true,
-            "gasPriceStep": {
-                "low": 0.01,
-                "average": 0.025,
-                "high": 0.03
-            },
-            "cc": {
-                "quote": "USDT",
-                "exchange": "binance"
-            }
-        },
-        {
-            "coinDenom": "ETH",
-            "coinDisplayDenom": "ETH",
-            "coinMinimalDenom": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-            "coinIbcDenom": "ibc/694A6B26A43A2FBECCFFEAC022DEACB39578E54207FDD32005CD976B57B98004",
-            "coinDecimals": 18,
-            "coinGeckoId": "ethereum",
-            "isFeeCurrency": true,
-            "isStakeCurrency": false,
-            "canSwap": true,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": true,
-            "canUsePerpetual": false,
-            "canUseVaults": true,
-            "cc": {
-                "quote": "USDT",
-                "exchange": "binance"
-            }
-        },
-        {
-            "coinDenom": "WBTC",
-            "coinDisplayDenom": "wBTC",
-            "coinMinimalDenom": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
-            "coinIbcDenom": "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E",
-            "coinDecimals": 8,
-            "coinGeckoId": "bitcoin",
-            "isFeeCurrency": true,
-            "isStakeCurrency": false,
-            "canSwap": true,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": true,
-            "canUsePerpetual": false,
-            "canUseVaults": true,
-            "cc": {
-                "quote": "USDT",
-                "exchange": "binance"
-            }
-        },
-        {
-            "coinDenom": "PAXG",
-            "coinDisplayDenom": "PAXG",
-            "coinMinimalDenom": "0x45804880de22913dafe09f4980848ece6ecbaf78",
-            "coinIbcDenom": "ibc/68B5E8DA9270FA00245484BB1C07AD75399AD67D54A1344F6E998B5FB69B664F",
-            "coinDecimals": 18,
-            "coinGeckoId": "pax-gold",
-            "isFeeCurrency": true,
-            "isStakeCurrency": false,
-            "canSwap": true,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": true,
-            "canUsePerpetual": false,
-            "canUseVaults": true,
-            "cc": {
-                "quote": "USDT",
-                "exchange": "binance"
-            }
-        }
-    ]
+    {
+      "coinDenom": "WBTC",
+      "coinDisplayDenom": "wBTC",
+      "coinMinimalDenom": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "coinIbcDenom": "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E",
+      "coinDecimals": 8,
+      "coinGeckoId": "bitcoin",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
+    },
+    {
+      "coinDenom": "PAXG",
+      "coinDisplayDenom": "PAXG",
+      "coinMinimalDenom": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+      "coinIbcDenom": "ibc/68B5E8DA9270FA00245484BB1C07AD75399AD67D54A1344F6E998B5FB69B664F",
+      "coinDecimals": 18,
+      "coinGeckoId": "pax-gold",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
+    },
+    {
+      "coinDenom": "LINK",
+      "coinDisplayDenom": "LINK",
+      "coinMinimalDenom": "juel",
+      "coinIbcDenom": "ibc/2A20C613F2BA256BE9FAD791B0743FBC4FE3C998EDF9234D969172F7D42FB8E7",
+      "coinDecimals": 18,
+      "coinGeckoId": "",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": false,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
+    }
+  ]
 }
