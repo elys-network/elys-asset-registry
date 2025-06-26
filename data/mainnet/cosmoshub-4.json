@@ -131,7 +131,7 @@
       "canUseLiquidityMining": true,
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
-      "canUseVaults": true,
+      "canUseVaults": false,
       "gasPriceStep": {
         "low": 0,
         "average": 0,
@@ -157,7 +157,7 @@
       "canUseLiquidityMining": true,
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
-      "canUseVaults": true,
+      "canUseVaults": false,
       "cc": {
         "quote": "USDT",
         "exchange": "binance"
