@@ -131,12 +131,33 @@
       "canUseLiquidityMining": true,
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
-      "canUseVaults": true,
+      "canUseVaults": false,
       "gasPriceStep": {
         "low": 0,
         "average": 0,
         "high": 0
       },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
+    },
+    {
+      "coinDenom": "ONDO",
+      "coinDisplayDenom": "ONDO",
+      "coinMinimalDenom": "wei-ondo",
+      "coinIbcDenom": "ibc/622E4D024777290E25ACFB32CE149BB21EF785D78A0A3F297A7AF29A88325AED",
+      "coinDecimals": 18,
+      "coinGeckoId": "",
+      "canSwap": true,
+      "isFeeCurrency": false,
+      "isStakeCurrency": false,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
       "cc": {
         "quote": "USDT",
         "exchange": "binance"
