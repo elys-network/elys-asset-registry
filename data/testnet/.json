@@ -1,0 +1,42 @@
+{
+  "chainId": "",
+  "chainName": "",
+  "addressPrefix": "",
+  "rpcURL": "",
+  "restURL": "",
+  "explorerURL": {
+    "transaction": ""
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
+  },
+  "currencies": [
+    {
+      "coinDenom": "",
+      "coinDisplayDenom": "",
+      "coinMinimalDenom": "\n\u0003BLD\u0012\u001110126884906936969\u001a\u0004elys",
+      "coinIbcDenom": "",
+      "coinDecimals": 0,
+      "coinGeckoId": "",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": false,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": false,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0,
+        "average": 0,
+        "high": 0
+      },
+      "cc": {
+        "quote": "",
+        "exchange": ""
+      }
+    }
+  ]
+}
