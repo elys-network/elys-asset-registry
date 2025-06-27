@@ -24,7 +24,7 @@
             "isStakeCurrency": true,
             "canWithdraw": true,
             "canDeposit": true,
-            "canUseLiquidityMining": true,
+            "canUseLiquidityMining": false,
             "canUseLeverageLP": false,
             "canUsePerpetual": false,
             "canUseVaults": false,
