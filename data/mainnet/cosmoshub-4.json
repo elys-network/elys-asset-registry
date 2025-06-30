@@ -119,7 +119,7 @@
     {
       "coinDenom": "LINK",
       "coinDisplayDenom": "LINK",
-      "coinMinimalDenom": "juel",
+      "coinMinimalDenom": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
       "coinIbcDenom": "ibc/2A20C613F2BA256BE9FAD791B0743FBC4FE3C998EDF9234D969172F7D42FB8E7",
       "coinDecimals": 18,
       "coinGeckoId": "",
@@ -145,7 +145,7 @@
     {
       "coinDenom": "ONDO",
       "coinDisplayDenom": "ONDO",
-      "coinMinimalDenom": "wei-ondo",
+      "coinMinimalDenom": "0xfAbA6f8e4a5E8Ab82F62fe7C39859FA577269BE3",
       "coinIbcDenom": "ibc/622E4D024777290E25ACFB32CE149BB21EF785D78A0A3F297A7AF29A88325AED",
       "coinDecimals": 18,
       "coinGeckoId": "",
