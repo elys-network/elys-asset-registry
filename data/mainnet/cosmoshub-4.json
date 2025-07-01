@@ -29,9 +29,9 @@
       "canUsePerpetual": false,
       "canUseVaults": true,
       "gasPriceStep": {
-        "low": 0.01,
-        "average": 0.025,
-        "high": 0.03
+        "low": 0.0002,
+        "average": 0.0003,
+        "high": 0.0004
       },
       "cc": {
         "quote": "USDT",

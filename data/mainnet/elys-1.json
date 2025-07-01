@@ -1,76 +1,76 @@
 {
-    "chainId": "elys-1",
-    "chainName": "Elys Network",
-    "addressPrefix": "elys",
-    "rpcURL": "https://rpc.elys.network",
-    "restURL": "https://api.elys.network",
-    "explorerURL": {
-        "transaction": "https://explorer.elys.network/tx/{transaction}"
+  "chainId": "elys-1",
+  "chainName": "Elys Network",
+  "addressPrefix": "elys",
+  "rpcURL": "https://rpc.elys.network",
+  "restURL": "https://api.elys.network",
+  "explorerURL": {
+    "transaction": "https://explorer.elys.network/tx/{transaction}"
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
+  },
+  "currencies": [
+    {
+      "coinDenom": "ELYS",
+      "coinDisplayDenom": "ELYS",
+      "coinMinimalDenom": "uelys",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "elys-network",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.02,
+        "high": 0.03
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "gateio"
+      }
     },
-    "channel": {
-        "source": "",
-        "destination": ""
+    {
+      "coinDenom": "EDEN BOOST",
+      "coinDisplayDenom": "EDEN BOOST",
+      "coinMinimalDenom": "uedenb",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "uedenb",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": true,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": false,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false
     },
-    "currencies": [
-        {
-            "coinDenom": "ELYS",
-            "coinDisplayDenom": "ELYS",
-            "coinMinimalDenom": "uelys",
-            "coinIbcDenom": "",
-            "coinDecimals": 6,
-            "coinGeckoId": "elys-network",
-            "canSwap": true,
-            "isFeeCurrency": true,
-            "isStakeCurrency": true,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": false,
-            "canUsePerpetual": false,
-            "canUseVaults": false,
-            "gasPriceStep": {
-                "low": 0.0003,
-                "average": 0.0025,
-                "high": 0.01
-            },
-            "cc": {
-                "quote": "USDT",
-                "exchange": "gateio"
-            }
-        },
-        {
-            "coinDenom": "EDEN BOOST",
-            "coinDisplayDenom": "EDEN BOOST",
-            "coinMinimalDenom": "uedenb",
-            "coinIbcDenom": "",
-            "coinDecimals": 6,
-            "coinGeckoId": "uedenb",
-            "canSwap": false,
-            "isFeeCurrency": false,
-            "isStakeCurrency": true,
-            "canWithdraw": false,
-            "canDeposit": false,
-            "canUseLiquidityMining": false,
-            "canUseLeverageLP": false,
-            "canUsePerpetual": false,
-            "canUseVaults": false
-        },
-        {
-            "coinDenom": "EDEN",
-            "coinDisplayDenom": "EDEN",
-            "coinMinimalDenom": "ueden",
-            "coinIbcDenom": "",
-            "coinDecimals": 6,
-            "coinGeckoId": "uedenb",
-            "canSwap": false,
-            "isFeeCurrency": false,
-            "isStakeCurrency": true,
-            "canWithdraw": false,
-            "canDeposit": false,
-            "canUseLiquidityMining": false,
-            "canUseLeverageLP": false,
-            "canUsePerpetual": false,
-            "canUseVaults": false
-        }
-    ]
+    {
+      "coinDenom": "EDEN",
+      "coinDisplayDenom": "EDEN",
+      "coinMinimalDenom": "ueden",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "uedenb",
+      "canSwap": false,
+      "isFeeCurrency": false,
+      "isStakeCurrency": true,
+      "canWithdraw": false,
+      "canDeposit": false,
+      "canUseLiquidityMining": false,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false
+    }
+  ]
 }
