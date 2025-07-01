@@ -153,8 +153,8 @@ The `channel` object specifies IBC channel configuration:
 
 ### Properties
 
-- **`source`** (required): Source IBC channel identifier
-- **`destination`** (required): Destination IBC channel identifier
+- **`source`** (required): Source (Elys) IBC channel identifier
+- **`destination`** (required): Destination chain IBC channel identifier
 - **Format**: `"channel-{number}"` or empty string `""`
 - **Example**: `"channel-1"`, `"channel-42"`, `""`
 
@@ -195,7 +195,7 @@ The `currencies` array contains all supported tokens/currencies on the chain:
 #### `coinDenom` (required)
 
 - **Type**: `string`
-- **Description**: Trading symbol/ticker (used as base in price APIs)
+- **Description**: Trading symbol/ticker (used as base in price APIs and as lockup key)
 - **Example**: `"ELYS"`, `"ATOM"`, `"OSMO"`
 - **Validation**: Only uppercase letters and numbers, 1-10 characters
 - **Pattern**: `^[A-Z0-9]+$`
@@ -203,27 +203,27 @@ The `currencies` array contains all supported tokens/currencies on the chain:
 #### `coinDisplayDenom` (required)
 
 - **Type**: `string`
-- **Description**: Human-readable display name
+- **Description**: In case the display name differs from `coinDenom`, this is used for user interfaces. Otherwise, keep it the same.
 - **Example**: `"Elys"`, `"Cosmos"`, `"USD Coin"`
 
 #### `coinMinimalDenom` (required)
 
 - **Type**: `string`
-- **Description**: Smallest unit denomination used on-chain
+- **Description**: Smallest unit denomination used on-chain. Must be the same than the one used in the destination chain.
 - **Example**: `"uelys"` (micro-elys), `"uatom"` (micro-atom)
 
 #### `coinIbcDenom` (required)
 
 - **Type**: `string`
-- **Description**: IBC denomination hash for cross-chain transfers
+- **Description**: Elys IBC denomination hash of the asset.
 - **Example**: `"ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"`
 - **Note**: Can be empty `""` for native tokens
-- **Validation**: Must match IBC hash format or Ethereum address or be empty
+- **Validation**: Must match IBC hash format or be empty
 
 #### `coinDecimals` (required)
 
 - **Type**: `integer`
-- **Description**: Number of decimal places for display
+- **Description**: Number of decimal places for parsing and formatting.
 - **Example**: `6` (1 ELYS = 1,000,000 uelys), `18` (for Ethereum tokens)
 - **Range**: 0-18
 
@@ -242,47 +242,55 @@ These boolean flags indicate what features the currency supports:
 #### `canSwap` (required)
 
 - **Type**: `boolean`
-- **Description**: Available for token swapping/trading
+- **Description**: Enables swaps on the frontend apps
+- **Validation**: There must be one amm pool already created on chain
 
 #### `isFeeCurrency` (required)
 
 - **Type**: `boolean`
-- **Description**: Can be used to pay transaction fees
+- **Description**: Whether the currency can be used to pay transaction fees on the Elys chain
+- **Validation**: Validators must support this currency for fees
 
 #### `isStakeCurrency` (required)
 
 - **Type**: `boolean`
-- **Description**: Can be staked for network security rewards
+- **Description**: Whether the currency can be staked for network security rewards
 
 #### `canWithdraw` (required)
 
 - **Type**: `boolean`
-- **Description**: Can be withdrawn from the platform
+- **Description**: Enables withdraws on the frontend apps
+- **Validation**: There must an IBC enabled channel for this currency
 
 #### `canDeposit` (required)
 
 - **Type**: `boolean`
-- **Description**: Can be deposited to the platform
+- **Description**: Enables deposits on the frontend apps
+- **Validation**: There must an IBC enabled channel for this currency
 
 #### `canUseLiquidityMining` (required)
 
 - **Type**: `boolean`
-- **Description**: Available for liquidity mining rewards
+- **Description**: Enables liquidity mining pool on the frontend apps.
+- **Validation**: There must be one amm pool already created on chain
 
 #### `canUseLeverageLP` (required)
 
 - **Type**: `boolean`
-- **Description**: Supports leveraged liquidity provision
+- **Description**: Enables leverage LP pool on the frontend apps.
+- **Validation**: There must be one amm pool already created on chain and leverage LP must be enabled through governance.
 
 #### `canUsePerpetual` (required)
 
 - **Type**: `boolean`
-- **Description**: Available for perpetual futures trading
+- **Description**: Enables perpetual trading on the frontend apps.
+- **Validation**: There must be one amm pool already created on chain and leverage LP must be enabled through governance.
 
 #### `canUseVaults` (required)
 
 - **Type**: `boolean`
-- **Description**: Compatible with automated vault strategies
+- **Description**: Enables vaults on the frontend apps.
+- **Validation**: There must be one amm pool already created on chain, leverage LP must be enabled through governance and vault must exist on chain.
 
 ## ⛽ Gas Price Configuration
 
