@@ -1,42 +1,42 @@
 {
-    "chainId": "noble-1",
-    "chainName": "Noble",
-    "addressPrefix": "noble",
-    "rpcURL": "https://noble-rpc.polkachu.com:443",
-    "restURL": "https://api.noble.xyz",
-    "explorerURL": {
-        "transaction": "https://mintscan.io/noble/txs/{transaction}"
-    },
-    "channel": {
-        "source": "channel-2",
-        "destination": "channel-117"
-    },
-    "currencies": [
-        {
-            "coinDenom": "USDC",
-            "coinDisplayDenom": "USDC",
-            "coinMinimalDenom": "uusdc",
-            "coinIbcDenom": "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349",
-            "coinDecimals": 6,
-            "coinGeckoId": "usd-coin",
-            "isFeeCurrency": true,
-            "isStakeCurrency": false,
-            "canSwap": true,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": true,
-            "canUsePerpetual": false,
-            "canUseVaults": true,
-            "gasPriceStep": {
-                "low": 0.1,
-                "average": 0.13,
-                "high": 0.2
-            },
-            "cc": {
-                "quote": "USD",
-                "exchange": "kraken"
-            }
-        }
-    ]
+  "chainId": "noble-1",
+  "chainName": "Noble",
+  "addressPrefix": "noble",
+  "rpcURL": "https://noble-rpc.polkachu.com:443",
+  "restURL": "https://api.noble.xyz",
+  "explorerURL": {
+    "transaction": "https://mintscan.io/noble/txs/{transaction}"
+  },
+  "channel": {
+    "source": "channel-2",
+    "destination": "channel-117"
+  },
+  "currencies": [
+    {
+      "coinDenom": "USDC",
+      "coinDisplayDenom": "USDC",
+      "coinMinimalDenom": "uusdc",
+      "coinIbcDenom": "ibc/F082B65C88E4B6D5EF1DB243CDA1D331D002759E938A0F5CD3FFDC5D53B3E349",
+      "coinDecimals": 6,
+      "coinGeckoId": "usd-coin",
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canSwap": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0.001,
+        "average": 0.002,
+        "high": 0.003
+      },
+      "cc": {
+        "quote": "USD",
+        "exchange": "kraken"
+      }
+    }
+  ]
 }

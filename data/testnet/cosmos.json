@@ -1,42 +1,42 @@
 {
-    "chainId": "provider",
-    "chainName": "Cosmos Hub (testnet)",
-    "addressPrefix": "cosmos",
-    "rpcURL": "https://rpc.provider-sentry-01.ics-testnet.polypore.xyz",
-    "restURL": "https://rest.provider-sentry-01.ics-testnet.polypore.xyz",
-    "explorerURL": {
-        "transaction": "https://explorer.polypore.xyz/provider/tx/{transaction}"
-    },
-    "channel": {
-        "source": "channel-1",
-        "destination": "channel-290"
-    },
-    "currencies": [
-        {
-            "coinDenom": "ATOM",
-            "coinDisplayDenom": "ATOM",
-            "coinMinimalDenom": "uatom",
-            "coinIbcDenom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-            "coinDecimals": 6,
-            "coinGeckoId": "cosmos",
-            "isStakeCurrency": true,
-            "isFeeCurrency": true,
-            "canSwap": true,
-            "canDeposit": true,
-            "canWithdraw": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": true,
-            "canUsePerpetual": true,
-            "canUseVaults": true,
-            "gasPriceStep": {
-                "low": 0.01,
-                "average": 0.025,
-                "high": 0.03
-            },
-            "cc": {
-                "quote": "USDT",
-                "exchange": "binance"
-            }
-        }
-    ]
+  "chainId": "provider",
+  "chainName": "Cosmos Hub (testnet)",
+  "addressPrefix": "cosmos",
+  "rpcURL": "https://rpc.provider-sentry-01.ics-testnet.polypore.xyz",
+  "restURL": "https://rest.provider-sentry-01.ics-testnet.polypore.xyz",
+  "explorerURL": {
+    "transaction": "https://explorer.polypore.xyz/provider/tx/{transaction}"
+  },
+  "channel": {
+    "source": "channel-1",
+    "destination": "channel-290"
+  },
+  "currencies": [
+    {
+      "coinDenom": "ATOM",
+      "coinDisplayDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
+      "coinIbcDenom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "coinDecimals": 6,
+      "coinGeckoId": "cosmos",
+      "isStakeCurrency": true,
+      "isFeeCurrency": true,
+      "canSwap": true,
+      "canDeposit": true,
+      "canWithdraw": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": true,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0.0002,
+        "average": 0.0003,
+        "high": 0.0004
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
+    }
+  ]
 }
