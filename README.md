@@ -14,7 +14,6 @@ This repository also functions as the official listing process for adding new as
 - [API Reference](docs/api.md)
 - [Chain Schema](docs/SCHEMA.md)
 - [Integration Examples](docs/integration.md)
-- [Versioning](docs/versioning.md)
 
 ## 🚀 Quick Start
 
