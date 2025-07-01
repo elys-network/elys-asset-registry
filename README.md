@@ -15,21 +15,6 @@ This repository also functions as the official listing process for adding new as
 - [Chain Schema](docs/SCHEMA.md)
 - [Integration Examples](docs/integration.md)
 
-## 🚀 Quick Start
-
-### Basic API Usage
-
-```bash
-# Get all mainnet chains
-curl https://registry.elys.network/v1/chains/mainnet
-
-# Get all currencies across mainnet networks
-curl https://registry.elys.network/v1/currencies/mainnet
-
-# Check API health
-curl https://registry.elys.network/health
-```
-
 ## 🤝 Contributing
 
 To add assets or make changes, see [Listing New Assets](docs/listing-assets.md).
