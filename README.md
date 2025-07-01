@@ -6,7 +6,7 @@ The official Elys Network Asset Registry is a standardized source of blockchain 
 
 📝 Official Listing Process:
 
-This repository also functions as the official listing process for adding new assets and liquidity pools to the Elys Network. Projects that wish to be supported by the Elys ecosystem must submit a structured pull request here, following the defined schema and validation rules. Once merged, these assets become available across all Elys-enabled applications and services.
+This repository also functions as the official listing process for adding new assets and liquidity pools to the Elys Network. Projects that wish to be supported by the Elys ecosystem must follow the steps below, following the defined schema and validation rules. Once merged, these assets become available across all Elys-enabled applications and services.
 
 ## 📚 Documentation
 
