@@ -1,6 +1,6 @@
 # Listing New Assets and Pools
 
-The following guide outlines the steps to list new assets and liquidity pools on the Elys Network. This process is essential for projects that want to be integrated into the Elys ecosystem, ensuring they are available across all Elys-enabled applications and services.
+The following guide outlines the steps to list a new IBC asset and liquidity pools on the Elys Network. This process is essential for projects that want to be integrated into the Elys ecosystem, ensuring they are available across all Elys-enabled applications and services.
 
 This guide is structured to help you through the entire process, from creating a relayer to updating the asset registry. Each step includes detailed instructions and examples to ensure a smooth listing experience.
 
