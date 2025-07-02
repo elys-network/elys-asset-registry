@@ -14,7 +14,6 @@ This guide is structured to help you through the entire process, from creating a
 - [Creating an AMM Pool](#creating-an-amm-pool)
 - [Enabling Rewards to the Pool](#enabling-rewards-to-the-pool)
 - [Creating a Leverage LP Pool](#creating-a-leverage-lp-pool)
-- [Enabling Rewards to the Leverage Pool](#enabling-rewards-to-the-leverage-pool)
 - [Creating a Vault](#creating-a-vault)
 - [Enabling Rewards to the Vault](#enabling-rewards-to-the-vault)
 - [Creating a Perpetual Pool](#creating-a-perpetual-pool)
@@ -108,9 +107,110 @@ Where:
 
 Please copy the pool id from the transaction output after executing the command. You will need it for the next steps.
 
-## Enabling Rewards to the Pool
+## Enabling Rewards to the AMM Pool
 
 To enable `EDEN` rewards for the AMM pool, you need to send the following gov proposal to the Elys Network.
+
+```proto
+message MsgTogglePoolEdenRewards {
+  option (cosmos.msg.v1.signer) = "authority";
+  option (amino.name) = "masterchef/MsgTogglePoolEdenRewards";
+  string authority = 1 [ (cosmos_proto.scalar) = "cosmos.AddressString" ];
+  uint64 pool_id = 2;
+  bool enable = 3;
+}
+```
+
+- `authority`: The address of the gov authority: `elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3`
+- `pool_id`: The ID of the AMM pool from the previous step. i.e `1`.
+- `enable`: Whether to enable or disable rewards for the pool. i.e `true`.
+
+To enable pool multipliers, you need to send the following gov proposal to the Elys Network.
+
+```proto
+message MsgUpdatePoolMultipliers {
+  option (cosmos.msg.v1.signer) = "authority";
+  option (amino.name) = "masterchef/MsgUpdatePoolMultipliers";
+  string authority = 1 [ (cosmos_proto.scalar) = "cosmos.AddressString" ];
+  repeated PoolMultiplier pool_multipliers = 2 [ (gogoproto.nullable) = false ];
+}
+```
+
+Where:
+
+- `authority`: The address of the gov authority: `elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3`
+- `pool_multipliers`: A list of pool multipliers to be applied to the pool. Each multiplier is defined as follows:
+
+```proto
+message PoolMultiplier {
+  uint64 pool_id = 1;
+  string multiplier = 2 [
+    (cosmos_proto.scalar) = "cosmos.Dec",
+    (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+    (gogoproto.nullable) = false
+  ];
+}
+```
+
+## Creating a Leverage LP Pool
+
+To enable the leverage LP pool, you need to send the following gov proposal to the Elys Network.
+
+```proto
+message MsgAddPool {
+  option (cosmos.msg.v1.signer) = "authority";
+  option (amino.name) = "leveragelp/MsgAddPool";
+  string authority = 1 [ (cosmos_proto.scalar) = "cosmos.AddressString" ];
+  AddPool pool = 2 [ (gogoproto.nullable) = false ];
+}
+```
+
+Where:
+
+- `authority`: The address of the gov authority: `elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3`
+- `pool`: The pool to be added, defined as follows:
+
+```proto
+message AddPool {
+  uint64 amm_pool_id = 1; // The ID of the AMM pool to be used for the leverage LP pool.
+  string pool_max_leverage_ratio = 2 [ // The maximum leverage ratio for the pool.
+    (cosmos_proto.scalar) = "cosmos.Dec",
+    (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+    (gogoproto.nullable) = false
+  ];
+  string leverage_max = 3 [
+    (cosmos_proto.scalar) = "cosmos.Dec",
+    (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+    (gogoproto.nullable) = false
+  ];
+}
+```
+
+## Creating a Vault
+
+By depositing assets into a vault, users can earn interest on their holdings by lending them to leverage LP pools. This process is facilitated by the Elys Network's Stablestake module, which manages the vaults and interest rates.
+
+To create a vault, please execute the following transaction:
+
+```bash
+elysd tx stablestake add-pool [deposit-denom] [interest-rate] [interest-rate-max] [interest-rate-min] [interest-rate-increase] [interest-rate-decrease] [health-factor] [max-leverage-ratio] [max-withdraw-ratio] [flags]
+```
+
+Where:
+
+- `deposit-denom`: The IBC denomination of the asset to be deposited in the vault. i.e `ibc/694A6B26A43A2FBECCFFEAC022DEACB39578E54207FDD32005CD976B57B98004`.
+- `interest-rate`: The initial interest rate for the vault.
+- `interest-rate-max`: The maximum interest rate for the vault.
+- `interest-rate-min`: The minimum interest rate for the vault.
+- `interest-rate-increase`: The rate at which the interest rate increases.
+- `interest-rate-decrease`: The rate at which the interest rate decreases.
+- `health-factor`: The health factor for the vault.
+- `max-leverage-ratio`: The maximum leverage ratio for the vault.
+- `max-withdraw-ratio`: The maximum withdraw ratio for the vault.
+
+## Enabling Rewards to the Vault
+
+Just like AMM pools, vaults can also earn `EDEN` rewards. To enable rewards for the vault, you need to send the following gov proposal to the Elys Network.
 
 ```proto
 message MsgTogglePoolEdenRewards {
@@ -125,8 +225,38 @@ message MsgTogglePoolEdenRewards {
 Where:
 
 - `authority`: The address of the gov authority: `elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3`
-- `pool_id`: The ID of the AMM pool from the previous step. i.e `1`.
-- `enable`: Whether to enable or disable rewards for the pool. i.e `true`.
+- `pool_id`: The ID of the vault from the previous step. i.e `1
+- `enable`: Whether to enable or disable rewards for the vault. i.e `true`.
+
+## Creating a Perpetual Pool
+
+Perpetual pools allow users to trade perpetual contracts on the Elys Network. These pools are designed to provide liquidity and enable leveraged trading.
+
+To create a perpetual pool, you need to send the following gov proposal to the Elys Network.
+
+```proto
+message MsgUpdateEnabledPools {
+  option (cosmos.msg.v1.signer) = "authority";
+  option (amino.name) = "perpetual/MsgUpdateEnabledPools";
+  string authority = 1 [ (cosmos_proto.scalar) = "cosmos.AddressString" ];
+  repeated uint64 enabled_pools = 2;
+  repeated uint64 add_pools = 3;
+  repeated uint64 remove_pools = 4;
+}
+```
+
+Where:
+
+- `authority`: The address of the gov authority: `elys10d07y265gmmuvt4z0w9aw880jnsr700j6z2zm3`
+- `enabled_pools`: A list of enabled perpetual pools. This is a list of pool IDs that are currently enabled for trading.
+- `add_pools`: A list of pool IDs to be added to the enabled pools. You can use your AMM pool ID from the previous step.
+- `remove_pools`: A list of pool IDs to be removed from the enabled pools.
+
+## Updating the Asset Registry
+
+Finally, you need to update the Elys Network Asset Registry to include the new asset and its associated pools. This is done by creating a pull request in the [Elys Network Asset Registry repository](https://github.com/elys-network/elys-asset-registry).
+
+If you created the (Asset Registry)[#adding-the-asset-profile] entry for the new asset, there should be already an open pull request with the template to fill. Please check [Chain Schema](docs/SCHEMA.md) for the required fields and the expected format.
 
 ## Open questions
 
@@ -139,3 +269,7 @@ Where:
 - amm create-pool weights: should we remove this option and keep 100:100 as default?
 - amm create-pool fee denom: never specified different than USDC. Should wee keep it as a required parameter?
 - rewards: how pool multipliers should be treated?
+- check out pool multipliers section. do we want users to execute that? What/how multiplier would be allowed/suggested?
+- pool_max_leverage_ratio: how would we suggest/handle this value?
+- vault creation: are we suggesting any values? users wont have context on how to set these values.
+- MsgUpdateEnabledPools: should we refactor this so users dont have to send the whole list of enabled pools? Maybe we can have a `MsgAddEnabledPool` and `MsgRemoveEnabledPool` or just a toggle?
