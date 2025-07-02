@@ -12,7 +12,7 @@ This guide is structured to help you through the entire process, from creating a
 - [Adding the Asset Info](#adding-the-asset-info)
 - [Reporting the Asset Price](#reporting-the-asset-price)
 - [Creating an AMM Pool](#creating-an-amm-pool)
-- [Enabling Rewards to the Pool](#enabling-rewards-to-the-pool)
+- [Enabling Rewards to the AMM Pool](#enabling-rewards-to-the-amm-pool)
 - [Creating a Leverage LP Pool](#creating-a-leverage-lp-pool)
 - [Creating a Vault](#creating-a-vault)
 - [Enabling Rewards to the Vault](#enabling-rewards-to-the-vault)
