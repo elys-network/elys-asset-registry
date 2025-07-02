@@ -1,6 +1,6 @@
 {
   "chainId": "elysics-1",
-  "chainName": "Elys Network (devnet)",
+  "chainName": "Elys Network (Devnet)",
   "addressPrefix": "elys",
   "rpcURL": "https://rpc.devnet.elys.network",
   "restURL": "https://api.devnet.elys.network",
