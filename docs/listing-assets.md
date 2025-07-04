@@ -18,6 +18,7 @@ This guide is structured to help you through the entire process, from creating a
 - [Enabling Rewards to the Vault](#enabling-rewards-to-the-vault)
 - [Creating a Perpetual Pool](#creating-a-perpetual-pool)
 - [Updating this Asset Registry](#updating-the-asset-registry)
+- [Updating Cosmos Asset Registry](#updating-cosmos-asset-registry)
 
 ## Pre-requisites
 
@@ -257,6 +258,10 @@ Where:
 Finally, you need to update the Elys Network Asset Registry to include the new asset and its associated pools. This is done by creating a pull request in the [Elys Network Asset Registry repository](https://github.com/elys-network/elys-asset-registry).
 
 If you created the (Asset Registry)[#adding-the-asset-profile] entry for the new asset, there should be already an open pull request with the template to fill. Please check [Chain Schema](docs/SCHEMA.md) for the required fields and the expected format.
+
+## Updating Cosmos Asset Registry
+
+In order for other chains and projects to recognize the new asset, you need to update the Cosmos Asset Registry. This is done by creating a pull request in the [Cosmos Asset Registry repository](https://github.com/cosmos/chain-registry/blob/master/elys/assetlist.json). Don't forget to include the logo url in both png and svg format. If the logo already exists in the directory from another chain, there's no need to upload our own version of the logo, we can simply link to the already existing logos.
 
 ## Open questions
 
