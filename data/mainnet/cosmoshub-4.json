@@ -26,7 +26,7 @@
       "canDeposit": true,
       "canUseLiquidityMining": true,
       "canUseLeverageLP": true,
-      "canUsePerpetual": false,
+      "canUsePerpetual": true,
       "canUseVaults": true,
       "gasPriceStep": {
         "low": 0.0002,
@@ -78,7 +78,7 @@
       "canDeposit": true,
       "canUseLiquidityMining": true,
       "canUseLeverageLP": true,
-      "canUsePerpetual": false,
+      "canUsePerpetual": true,
       "canUseVaults": true,
       "gasPriceStep": {
         "low": 0,
