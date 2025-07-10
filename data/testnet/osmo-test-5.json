@@ -1,42 +1,42 @@
 {
-    "chainId": "osmo-test-5",
-    "chainName": "Osmosis (testnet)",
-    "addressPrefix": "osmo",
-    "rpcURL": "https://osmosis-testnet-rpc.polkachu.com",
-    "restURL": "https://lcd.osmotest5.osmosis.zone",
-    "explorerURL": {
-        "transaction": "https://testnet.mintscan.io/osmosis-testnet/txs/{transaction}"
-    },
-    "channel": {
-        "source": "channel-6",
-        "destination": "channel-10240"
-    },
-    "currencies": [
-        {
-            "coinDenom": "OSMO",
-            "coinDisplayDenom": "OSMO",
-            "coinMinimalDenom": "uosmo",
-            "coinIbcDenom": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
-            "coinDecimals": 6,
-            "isStakeCurrency": false,
-            "isFeeCurrency": false,
-                        "coinGeckoId": "osmosis",
-            "canSwap": true,
-            "canDeposit": false,
-            "canWithdraw": false,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": false,
-            "canUsePerpetual": false,
-            "canUseVaults": false,
-            "gasPriceStep": {
-                "low": 0.0025,
-                "average": 0.025,
-                "high": 0.04
-            },
-            "cc": {
-                "quote": "USDT",
-                "exchange": "binance"
-            }
-        }
-    ]
+  "chainId": "osmo-test-5",
+  "chainName": "Osmosis (testnet)",
+  "addressPrefix": "osmo",
+  "rpcURL": "https://osmosis-testnet-rpc.polkachu.com",
+  "restURL": "https://lcd.osmotest5.osmosis.zone",
+  "explorerURL": {
+    "transaction": "https://testnet.mintscan.io/osmosis-testnet/txs/{transaction}"
+  },
+  "channel": {
+    "source": "channel-6",
+    "destination": "channel-10240"
+  },
+  "currencies": [
+    {
+      "coinDenom": "OSMO",
+      "coinDisplayDenom": "OSMO",
+      "coinMinimalDenom": "uosmo",
+      "coinIbcDenom": "ibc/646315E3B0461F5FA4C5C8968A88FC45D4D5D04A45B98F1B8294DD82F386DD85",
+      "coinDecimals": 6,
+      "isStakeCurrency": false,
+      "isFeeCurrency": false,
+      "coinGeckoId": "osmosis",
+      "canSwap": true,
+      "canDeposit": false,
+      "canWithdraw": false,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 11395000000,
+        "average": 21395000000,
+        "high": 31395000000
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
+    }
+  ]
 }

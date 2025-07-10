@@ -28,6 +28,11 @@
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
       "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 11395000000,
+        "average": 21395000000,
+        "high": 31395000000
+      },
       "cc": {
         "quote": "USDT",
         "exchange": "binance"
