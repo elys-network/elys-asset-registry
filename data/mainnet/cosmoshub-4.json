@@ -123,15 +123,15 @@
       "coinIbcDenom": "ibc/2A20C613F2BA256BE9FAD791B0743FBC4FE3C998EDF9234D969172F7D42FB8E7",
       "coinDecimals": 18,
       "coinGeckoId": "",
-      "canSwap": false,
+      "canSwap": true,
       "isFeeCurrency": false,
       "isStakeCurrency": false,
-      "canWithdraw": false,
-      "canDeposit": false,
+      "canWithdraw": true,
+      "canDeposit": true,
       "canUseLiquidityMining": true,
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
-      "canUseVaults": false,
+      "canUseVaults": true,
       "gasPriceStep": {
         "low": 0,
         "average": 0,
@@ -157,7 +157,7 @@
       "canUseLiquidityMining": true,
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
-      "canUseVaults": false,
+      "canUseVaults": true,
       "cc": {
         "quote": "USDT",
         "exchange": "binance"
