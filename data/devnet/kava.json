@@ -19,8 +19,8 @@
       "coinMinimalDenom": "ukava",
       "coinIbcDenom": "",
       "coinDecimals": 6,
-
       "coinGeckoId": "kava",
+      "isStakeCurrency": false,
       "isFeeCurrency": true,
       "canSwap": true,
       "canWithdraw": true,
@@ -29,9 +29,6 @@
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
       "canUseVaults": false,
-      "bip44": {
-        "coinType": 459
-      },
       "gasPriceStep": {
         "low": 0.01,
         "average": 0.025,
