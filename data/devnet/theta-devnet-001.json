@@ -13,7 +13,7 @@
       "coinDenom": "ATOM",
       "coinDisplayDenom": "ATOM",
       "coinMinimalDenom": "uatom",
-      "coinIbcDenom": "uatom",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "cosmos",
 

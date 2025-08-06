@@ -17,7 +17,7 @@
       "coinDenom": "NTRN",
       "coinDisplayDenom": "NTRN",
       "coinMinimalDenom": "untrn",
-      "coinIbcDenom": "untrn",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "",
 

@@ -17,7 +17,7 @@
       "coinDenom": "AKT",
       "coinDisplayDenom": "AKT",
       "coinMinimalDenom": "uakt",
-      "coinIbcDenom": "uakt",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "akash-network",
 

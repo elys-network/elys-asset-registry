@@ -17,7 +17,7 @@
       "coinDenom": "OM",
       "coinDisplayDenom": "OM",
       "coinMinimalDenom": "uom",
-      "coinIbcDenom": "uom",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "",
 

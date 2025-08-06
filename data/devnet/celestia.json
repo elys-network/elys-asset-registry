@@ -17,7 +17,7 @@
       "coinDenom": "TIA",
       "coinDisplayDenom": "TIA",
       "coinMinimalDenom": "utia",
-      "coinIbcDenom": "utia",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "celestia",
 

@@ -17,7 +17,7 @@
       "coinDenom": "OSMO",
       "coinDisplayDenom": "OSMO",
       "coinMinimalDenom": "uosmo",
-      "coinIbcDenom": "uosmo",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "osmosis",
 

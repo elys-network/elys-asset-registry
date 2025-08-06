@@ -17,7 +17,7 @@
       "coinDenom": "KAVA",
       "coinDisplayDenom": "KAVA",
       "coinMinimalDenom": "ukava",
-      "coinIbcDenom": "ukava",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
 
       "coinGeckoId": "kava",

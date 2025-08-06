@@ -17,7 +17,7 @@
       "coinDenom": "SAGA",
       "coinDisplayDenom": "SAGA",
       "coinMinimalDenom": "usaga",
-      "coinIbcDenom": "usaga",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "saga",
 

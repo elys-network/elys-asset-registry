@@ -17,7 +17,7 @@
       "coinDenom": "XION",
       "coinDisplayDenom": "XION",
       "coinMinimalDenom": "uxion",
-      "coinIbcDenom": "uxion",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "xion",
 

@@ -13,7 +13,7 @@
       "coinDenom": "USDC",
       "coinDisplayDenom": "USDC",
       "coinMinimalDenom": "uusdc",
-      "coinIbcDenom": "uusdc",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
 
       "coinGeckoId": "usd-coin",

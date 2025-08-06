@@ -17,7 +17,7 @@
       "coinDenom": "BLD",
       "coinDisplayDenom": "BLD",
       "coinMinimalDenom": "ubld",
-      "coinIbcDenom": "ubld",
+      "coinIbcDenom": "",
       "coinDecimals": 6,
       "coinGeckoId": "",
       "isFeeCurrency": true,
