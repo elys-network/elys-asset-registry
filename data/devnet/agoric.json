@@ -1,0 +1,41 @@
+{
+  "chainNetwork": "devnet",
+  "chainId": "agoric-3",
+  "chainName": "Agoric",
+  "addressPrefix": "agoric",
+  "rpcURL": "https://main.rpc.agoric.net:443",
+  "restURL": "https://main.api.agoric.net:443",
+  "chainLogo": "/tokens/bld.svg",
+  "explorerURL": {
+    "transaction": "https://www.mintscan.io/agoric/tx/{transaction}"
+  },
+  "channel": {
+    "source": "channel-12",
+    "destination": "channel-152"
+  },
+  "currencies": [
+    {
+      "coinDenom": "BLD",
+      "coinMinimalDenom": "ubld",
+      "coinIbcDenom": "ubld",
+      "coinDecimals": 6,
+      "coinGeckoId": "",
+      "coinImageUrl": "/tokens/bld.svg",
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canSwap": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "exchangeData": "gateio",
+      "gasPriceStep": {
+        "low": 0.03,
+        "average": 0.05,
+        "high": 0.07
+      }
+    }
+  ]
+}

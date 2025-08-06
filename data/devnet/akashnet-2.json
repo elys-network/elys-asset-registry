@@ -1,0 +1,41 @@
+{
+  "chainNetwork": "devnet",
+  "chainId": "akashnet-2",
+  "chainName": "Akash",
+  "addressPrefix": "akash",
+  "rpcURL": "https://rpc-akash.ottersync.io",
+  "restURL": "https://api.akashnet.net",
+  "chainLogo": "/tokens/akt.svg",
+  "explorerURL": {
+    "transaction": "https://www.mintscan.io/akash/tx/{transaction}"
+  },
+  "channel": {
+    "source": "channel-5",
+    "destination": "channel-129"
+  },
+  "currencies": [
+    {
+      "coinDenom": "AKT",
+      "coinMinimalDenom": "uakt",
+      "coinIbcDenom": "uakt",
+      "coinDecimals": 6,
+      "coinGeckoId": "akash-network",
+      "coinImageUrl": "/tokens/akt.svg",
+      "isStakeCurrency": false,
+      "isFeeCurrency": true,
+      "canSwap": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "exchangeData": "gateio",
+      "gasPriceStep": {
+        "low": 0.0003,
+        "average": 0.003,
+        "high": 0.03
+      }
+    }
+  ]
+}

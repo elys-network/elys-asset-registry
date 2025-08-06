@@ -1,0 +1,40 @@
+{
+  "chainNetwork": "devnet",
+  "chainId": "mantra-1",
+  "chainName": "Mantra",
+  "addressPrefix": "mantra",
+  "rpcURL": "https://mantra-mainnet-rpc.itrocket.net:443",
+  "restURL": "https://mantra-mainnet-api.itrocket.net",
+  "chainLogo": "/tokens/mantra.svg",
+  "explorerURL": {
+    "transaction": "https://mainnet.itrocket.net/mantra/transaction/{transaction}"
+  },
+  "channel": {
+    "source": "channel-11",
+    "destination": "channel-5"
+  },
+  "currencies": [
+    {
+      "coinDenom": "OM",
+      "coinMinimalDenom": "uom",
+      "coinIbcDenom": "uom",
+      "coinDecimals": 6,
+      "coinGeckoId": "",
+      "coinImageUrl": "/tokens/mantra.svg",
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canSwap": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": true,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.02,
+        "high": 0.03
+      }
+    }
+  ]
+}
