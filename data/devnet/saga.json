@@ -1,0 +1,40 @@
+{
+  "chainId": "ssc-1",
+  "chainName": "Saga",
+  "addressPrefix": "saga",
+  "rpcURL": "https://rpc-saga.ottersync.io",
+  "restURL": "https://api-saga.ottersync.io",
+
+  "explorerURL": {
+    "transaction": "https://www.mintscan.io/saga/tx/{transaction}"
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
+  },
+  "currencies": [
+    {
+      "coinDenom": "SAGA",
+      "coinDisplayDenom": "SAGA",
+      "coinMinimalDenom": "usaga",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "saga",
+
+      "isStakeCurrency": false,
+      "isFeeCurrency": true,
+      "canSwap": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0.025,
+        "average": 0.025,
+        "high": 0.04
+      }
+    }
+  ]
+}

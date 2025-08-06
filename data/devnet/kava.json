@@ -1,0 +1,39 @@
+{
+  "chainId": "kava_2222-10",
+  "chainName": "Kava",
+  "addressPrefix": "kava",
+  "rpcURL": "https://rpc.data.kava.io",
+  "restURL": "https://api.data.kava.io",
+
+  "explorerURL": {
+    "transaction": "https://www.mintscan.io/kava/transactions/{transaction}"
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
+  },
+  "currencies": [
+    {
+      "coinDenom": "KAVA",
+      "coinDisplayDenom": "KAVA",
+      "coinMinimalDenom": "ukava",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "kava",
+      "isStakeCurrency": false,
+      "isFeeCurrency": true,
+      "canSwap": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.025,
+        "high": 0.03
+      }
+    }
+  ]
+}

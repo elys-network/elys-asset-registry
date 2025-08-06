@@ -1,0 +1,40 @@
+{
+  "chainId": "celestia",
+  "chainName": "Celestia",
+  "addressPrefix": "celestia",
+  "rpcURL": "https://rpc-celestia.ottersync.io",
+  "restURL": "https://api.lunaroasis.net",
+
+  "explorerURL": {
+    "transaction": "https://celenium.io/tx/{transaction}"
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
+  },
+  "currencies": [
+    {
+      "coinDenom": "TIA",
+      "coinDisplayDenom": "TIA",
+      "coinMinimalDenom": "utia",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "celestia",
+
+      "isStakeCurrency": false,
+      "isFeeCurrency": true,
+      "canSwap": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0.015,
+        "average": 0.025,
+        "high": 0.1
+      }
+    }
+  ]
+}

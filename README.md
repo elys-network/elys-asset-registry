@@ -1,4 +1,5 @@
 # Elys Asset Registry
+
 [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1z653.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 
 Official Elys Network asset registry providing standardized blockchain and token configurations for all Elys ecosystem projects. This registry serves as the single source of truth for chain metadata, RPC endpoints, token information, and feature capabilities across the entire Elys ecosystem.
@@ -30,25 +31,25 @@ curl https://registry.elys.network/health
 
 ### Chain Endpoints
 
-| Method | Endpoint | Description | Status |
-|--------|----------|-------------|--------|
-| `GET` | `/v1/chains/mainnet` | List all mainnet chains | ✅ Available |
-| `GET` | `/v1/chains/testnet` | List all testnet chains | ✅ Available |
-| `GET` | `/v1/chains/devnet`  | List all devnet chains | ✅ Available |
+| Method | Endpoint             | Description             | Status       |
+| ------ | -------------------- | ----------------------- | ------------ |
+| `GET`  | `/v1/chains/mainnet` | List all mainnet chains | ✅ Available |
+| `GET`  | `/v1/chains/testnet` | List all testnet chains | ✅ Available |
+| `GET`  | `/v1/chains/devnet`  | List all devnet chains  | ✅ Available |
 
 ### Currency Endpoints
 
-| Method | Endpoint | Description | Status |
-|--------|----------|-------------|--------|
-| `GET` | `/v1/currencies/mainnet` | List all currencies across mainnet network | ✅ Available |
-| `GET` | `/v1/currencies/testnet` | List all currencies across testnet network | ✅ Available  |
-| `GET` | `/v1/currencies/devnet` | List all currencies across devnet networks |  ✅ Available  |
+| Method | Endpoint                 | Description                                | Status       |
+| ------ | ------------------------ | ------------------------------------------ | ------------ |
+| `GET`  | `/v1/currencies/mainnet` | List all currencies across mainnet network | ✅ Available |
+| `GET`  | `/v1/currencies/testnet` | List all currencies across testnet network | ✅ Available |
+| `GET`  | `/v1/currencies/devnet`  | List all currencies across devnet networks | ✅ Available |
 
 ### Utility Endpoints
 
-| Method | Endpoint | Description | Status |
-|--------|----------|-------------|--------|
-| `GET` | `/health` | API health status | ✅ Available |
+| Method | Endpoint  | Description       | Status       |
+| ------ | --------- | ----------------- | ------------ |
+| `GET`  | `/health` | API health status | ✅ Available |
 
 ## 📊 Data Structure
 
@@ -77,7 +78,6 @@ curl https://registry.elys.network/health
           "coinIbcDenom": "",
           "coinDecimals": 6,
           "coinGeckoId": "elys",
-          "coinImageUrl": "/tokens/elys.svg",
           "isFeeCurrency": true,
           "isStakeCurrency": false,
           "canSwap": true,
@@ -102,20 +102,21 @@ curl https://registry.elys.network/health
 ## 🔧 Integration Examples
 
 ### JavaScript/Node.js
-```javascript
 
-const response = await fetch('https://registry.elys.network/v1/chains/mainnet');
+```javascript
+const response = await fetch("https://registry.elys.network/v1/chains/mainnet");
 const registry = await response.json();
 
 const elysChain = registry.chains.elys;
 console.log(`RPC URL: ${elysChain.rpcURL}`);
 
 const swappableCurrencies = Object.values(registry.chains)
-  .flatMap(chain => chain.currencies)
-  .filter(currency => currency.canSwap);
+  .flatMap((chain) => chain.currencies)
+  .filter((currency) => currency.canSwap);
 ```
 
 ### Go
+
 ```go
 package main
 
@@ -162,6 +163,7 @@ func main() {
 ```
 
 ### Java
+
 ```java
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.net.http.HttpClient;
@@ -171,11 +173,11 @@ import java.net.URI;
 
 public class ElysRegistryClient {
     private static final String REGISTRY_URL = "https://registry.elys.network/v1/chains/mainnet";
-    
+
     public static class AssetRegistry {
         public Map<String, ChainAsset> chains;
     }
-    
+
     public static class ChainAsset {
         public String chainId;
         public String chainName;
@@ -183,7 +185,7 @@ public class ElysRegistryClient {
         public String restURL;
         public List<Currency> currencies;
     }
-    
+
     public static class Currency {
         public String coinDenom;
         public String coinMinimalDenom;
@@ -191,19 +193,19 @@ public class ElysRegistryClient {
         public boolean canSwap;
         public boolean canDeposit;
     }
-    
+
     public static void main(String[] args) throws Exception {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create(REGISTRY_URL))
             .build();
-            
-        HttpResponse<String> response = client.send(request, 
+
+        HttpResponse<String> response = client.send(request,
             HttpResponse.BodyHandlers.ofString());
-            
+
         ObjectMapper mapper = new ObjectMapper();
         AssetRegistry registry = mapper.readValue(response.body(), AssetRegistry.class);
-        
+
         ChainAsset elys = registry.chains.get("elys");
         System.out.println("Elys RPC: " + elys.rpcURL);
     }
@@ -211,6 +213,7 @@ public class ElysRegistryClient {
 ```
 
 ### Python
+
 ```python
 import requests
 import json
@@ -240,12 +243,12 @@ class AssetRegistry:
 def load_registry() -> AssetRegistry:
     response = requests.get("https://registry.elys.network/mainnet")
     data = response.json()
-    
+
     chains = {}
     for key, chain_data in data["chains"].items():
         currencies = [Currency(**curr) for curr in chain_data["currencies"]]
         chains[key] = ChainAsset(**{**chain_data, "currencies": currencies})
-    
+
     return AssetRegistry(chains=chains)
 
 # Uso
@@ -255,6 +258,7 @@ print(f"Elys RPC: {elys_chain.rpcURL}")
 ```
 
 ### Rust
+
 ```rust
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
@@ -291,17 +295,18 @@ struct AssetRegistry {
     chains: HashMap# API Endpoints y Consumo Multi-Plataforma
 
 ```
+
 ## 📁 Repository Structure
 
 ```
 elys-asset-registry/
 ├── 📁 data/
-│   ├── 📁 mainnet/       
+│   ├── 📁 mainnet/
 │   ├──── elys.json
 │   ├──── cosmos.json
 │   ├── 📁 testnet/
 │   ├──── elys.json
-│   ├──── cosmos.json              
+│   ├──── cosmos.json
 ├── 📁 schema/
 │   └── asset-registry.schema.json  # JSON Schema
 ├── 📁 examples/
@@ -312,7 +317,7 @@ elys-asset-registry/
 │   └── rust/                   # Rust examples
 ├── 📁 .github/
 │   └── workflows/
-│       └─ validate-registry.yml        CI for validatio     
+│       └─ validate-registry.yml        CI for validatio
 ├──📄 .version
 └──📄 README.md
 ```
@@ -340,42 +345,42 @@ Each chain asset must include:
 
 ```json
 {
-    "chainId": "elys-1",
-    "chainName": "Elys",
-    "addressPrefix": "elys",
-    "rpcURL": "https://rpc.elys.network:443",
-    "restURL": "https://api.elys.network:443",
-    "explorerURL": {
-        "transaction": "https://mainnet.itrocket.net/elys/tx/{transaction}"
-    },
-    "channel": {
-        "source": "",
-        "destination": ""
-    },
-    "currencies": [
-        {
-            "coinDenom": "ELYS",
-            "coinDisplayDenom": "Elys",
-            "coinMinimalDenom": "uelys",
-            "coinIbcDenom": "",
-            "coinDecimals": 6,
-            "coinGeckoId": "elys",
-            "canSwap": true,
-            "isFeeCurrency": true,
-            "isStakeCurrency": true,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": false,
-            "canUsePerpetual": false,
-            "canUseVaults": true,
-            "gasPriceStep": {
-                "low": 0.01,
-                "average": 0.025,
-                "high": 0.03
-            }
-        }
-    ]
+  "chainId": "elys-1",
+  "chainName": "Elys",
+  "addressPrefix": "elys",
+  "rpcURL": "https://rpc.elys.network:443",
+  "restURL": "https://api.elys.network:443",
+  "explorerURL": {
+    "transaction": "https://mainnet.itrocket.net/elys/tx/{transaction}"
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
+  },
+  "currencies": [
+    {
+      "coinDenom": "ELYS",
+      "coinDisplayDenom": "Elys",
+      "coinMinimalDenom": "uelys",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "elys",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": false,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.025,
+        "high": 0.03
+      }
+    }
+  ]
 }
 ```
 

@@ -1,0 +1,39 @@
+{
+  "chainId": "xion-devnet-1",
+  "chainName": "Xion",
+  "addressPrefix": "xion",
+  "rpcURL": "https://rpc-xion.ottersync.io",
+  "restURL": "https://api-xion.ottersync.io",
+  "explorerURL": {
+    "transaction": "https://xion.explorers.guru/transaction/{transaction}"
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
+  },
+  "currencies": [
+    {
+      "coinDenom": "XION",
+      "coinDisplayDenom": "XION",
+      "coinMinimalDenom": "uxion",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "xion",
+
+      "isStakeCurrency": false,
+      "isFeeCurrency": true,
+      "canSwap": true,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": false,
+      "gasPriceStep": {
+        "low": 0.025,
+        "average": 0.025,
+        "high": 0.04
+      }
+    }
+  ]
+}

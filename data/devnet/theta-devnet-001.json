@@ -1,0 +1,39 @@
+{
+  "chainId": "theta-devnet-001",
+  "chainName": "Cosmos Hub (devnet)",
+  "addressPrefix": "cosmos",
+  "rpcURL": "https://rpc.sentry-02.theta-testnet.polypore.xyz",
+  "restURL": "https://rest.sentry-02.theta-testnet.polypore.xyz",
+  "explorerURL": {
+    "transaction": "https://testnet.mintscan.io/cosmoshub-testnet/txs/{transaction}"
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
+  },
+  "currencies": [
+    {
+      "coinDenom": "ATOM",
+      "coinDisplayDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
+      "coinIbcDenom": "",
+      "coinDecimals": 6,
+      "coinGeckoId": "cosmos",
+
+      "isStakeCurrency": true,
+      "isFeeCurrency": true,
+      "canSwap": true,
+      "canDeposit": true,
+      "canWithdraw": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": true,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0.01,
+        "average": 0.025,
+        "high": 0.03
+      }
+    }
+  ]
+}
