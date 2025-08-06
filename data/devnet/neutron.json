@@ -1,11 +1,10 @@
 {
-  "chainNetwork": "devnet",
   "chainId": "neutron-1",
   "chainName": "Neutron",
   "addressPrefix": "neutron",
   "rpcURL": "https://rpc-voidara.neutron-1.neutron.org",
   "restURL": "https://rest.lavenderfive.com/neutron",
-  "chainLogo": "/tokens/neutron.svg",
+
   "explorerURL": {
     "transaction": "https://www.mintscan.io/neutron/transactions/{transaction}"
   },
@@ -16,11 +15,12 @@
   "currencies": [
     {
       "coinDenom": "NTRN",
+      "coinDisplayDenom": "NTRN",
       "coinMinimalDenom": "untrn",
       "coinIbcDenom": "untrn",
       "coinDecimals": 6,
       "coinGeckoId": "",
-      "coinImageUrl": "/tokens/neutron.svg",
+
       "isFeeCurrency": true,
       "isStakeCurrency": false,
       "canSwap": true,

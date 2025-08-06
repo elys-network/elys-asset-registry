@@ -1,11 +1,10 @@
 {
-  "chainNetwork": "devnet",
   "chainId": "akashnet-2",
   "chainName": "Akash",
   "addressPrefix": "akash",
   "rpcURL": "https://rpc-akash.ottersync.io",
   "restURL": "https://api.akashnet.net",
-  "chainLogo": "/tokens/akt.svg",
+
   "explorerURL": {
     "transaction": "https://www.mintscan.io/akash/tx/{transaction}"
   },
@@ -16,11 +15,12 @@
   "currencies": [
     {
       "coinDenom": "AKT",
+      "coinDisplayDenom": "AKT",
       "coinMinimalDenom": "uakt",
       "coinIbcDenom": "uakt",
       "coinDecimals": 6,
       "coinGeckoId": "akash-network",
-      "coinImageUrl": "/tokens/akt.svg",
+
       "isStakeCurrency": false,
       "isFeeCurrency": true,
       "canSwap": true,
@@ -30,7 +30,7 @@
       "canUseLeverageLP": true,
       "canUsePerpetual": false,
       "canUseVaults": false,
-      "exchangeData": "gateio",
+
       "gasPriceStep": {
         "low": 0.0003,
         "average": 0.003,

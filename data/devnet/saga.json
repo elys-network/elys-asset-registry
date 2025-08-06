@@ -1,11 +1,10 @@
 {
-  "chainNetwork": "devnet",
   "chainId": "ssc-1",
   "chainName": "Saga",
   "addressPrefix": "saga",
   "rpcURL": "https://rpc-saga.ottersync.io",
   "restURL": "https://api-saga.ottersync.io",
-  "chainLogo": "/tokens/saga.svg",
+
   "explorerURL": {
     "transaction": "https://www.mintscan.io/saga/tx/{transaction}"
   },
@@ -16,12 +15,12 @@
   "currencies": [
     {
       "coinDenom": "SAGA",
+      "coinDisplayDenom": "SAGA",
       "coinMinimalDenom": "usaga",
       "coinIbcDenom": "usaga",
       "coinDecimals": 6,
       "coinGeckoId": "saga",
-      "exchangeData": "gateio",
-      "coinImageUrl": "/tokens/saga.svg",
+
       "isStakeCurrency": false,
       "isFeeCurrency": true,
       "canSwap": true,

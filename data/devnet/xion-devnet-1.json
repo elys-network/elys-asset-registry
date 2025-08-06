@@ -1,11 +1,10 @@
 {
-  "chainNetwork": "devnet",
   "chainId": "xion-devnet-1",
   "chainName": "Xion",
   "addressPrefix": "xion",
   "rpcURL": "https://rpc-xion.ottersync.io",
   "restURL": "https://api-xion.ottersync.io",
-  "chainLogo": "/tokens/xion.svg",
+
   "explorerURL": {
     "transaction": "https://xion.explorers.guru/transaction/{transaction}"
   },
@@ -16,12 +15,12 @@
   "currencies": [
     {
       "coinDenom": "XION",
+      "coinDisplayDenom": "XION",
       "coinMinimalDenom": "uxion",
       "coinIbcDenom": "uxion",
       "coinDecimals": 6,
       "coinGeckoId": "xion",
-      "exchangeData": "gateio",
-      "coinImageUrl": "/tokens/xion.svg",
+
       "isStakeCurrency": false,
       "isFeeCurrency": true,
       "canSwap": true,

@@ -1,11 +1,10 @@
 {
-  "chainNetwork": "devnet",
   "chainId": "kava_2222-10",
   "chainName": "Kava",
   "addressPrefix": "kava",
   "rpcURL": "https://rpc.data.kava.io",
   "restURL": "https://api.data.kava.io",
-  "chainLogo": "/tokens/kava.svg",
+
   "explorerURL": {
     "transaction": "https://www.mintscan.io/kava/transactions/{transaction}"
   },
@@ -16,10 +15,11 @@
   "currencies": [
     {
       "coinDenom": "KAVA",
+      "coinDisplayDenom": "KAVA",
       "coinMinimalDenom": "ukava",
       "coinIbcDenom": "ukava",
       "coinDecimals": 6,
-      "coinImageUrl": "/tokens/kava.svg",
+
       "coinGeckoId": "kava",
       "isFeeCurrency": true,
       "canSwap": true,

@@ -1,21 +1,21 @@
 {
-  "chainNetwork": "devnet",
   "chainId": "grand-2",
   "chainName": "Noble (devnet)",
   "addressPrefix": "noble",
   "rpcURL": "https://noble-testnet-rpc.polkachu.com",
   "restURL": "https://api.testnet.noble.strange.love",
-  "chainLogo": "/tokens/noble.svg",
+
   "explorerURL": {
     "transaction": "https://testnet.mintscan.io/noble-testnet/txs/{transaction}"
   },
   "currencies": [
     {
       "coinDenom": "USDC",
+      "coinDisplayDenom": "USDC",
       "coinMinimalDenom": "uusdc",
       "coinIbcDenom": "uusdc",
       "coinDecimals": 6,
-      "coinImageUrl": "/tokens/usdc.svg",
+
       "coinGeckoId": "usd-coin",
       "isFeeCurrency": true,
       "canSwap": true,

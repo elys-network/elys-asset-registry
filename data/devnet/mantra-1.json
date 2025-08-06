@@ -1,11 +1,10 @@
 {
-  "chainNetwork": "devnet",
   "chainId": "mantra-1",
   "chainName": "Mantra",
   "addressPrefix": "mantra",
   "rpcURL": "https://mantra-mainnet-rpc.itrocket.net:443",
   "restURL": "https://mantra-mainnet-api.itrocket.net",
-  "chainLogo": "/tokens/mantra.svg",
+
   "explorerURL": {
     "transaction": "https://mainnet.itrocket.net/mantra/transaction/{transaction}"
   },
@@ -16,11 +15,12 @@
   "currencies": [
     {
       "coinDenom": "OM",
+      "coinDisplayDenom": "OM",
       "coinMinimalDenom": "uom",
       "coinIbcDenom": "uom",
       "coinDecimals": 6,
       "coinGeckoId": "",
-      "coinImageUrl": "/tokens/mantra.svg",
+
       "isFeeCurrency": true,
       "isStakeCurrency": false,
       "canSwap": true,
