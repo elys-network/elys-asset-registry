@@ -1,42 +1,42 @@
 {
-    "chainId": "bbn-1",
-    "chainName": "Babylon",
-    "addressPrefix": "bbn",
-    "rpcURL": "https://babylon.nodes.guru/rpc",
-    "restURL": "https://babylon.nodes.guru/api",
-    "explorerURL": {
-        "transaction": "https://www.mintscan.io/babylon/transactions/{transaction}"
-    },
-    "channel": {
-        "source": "channel-22",
-        "destination": "channel-6"
-    },
-    "currencies": [
-        {
-            "coinDenom": "BABY",
-            "coinDisplayDenom": "BABY",
-            "coinMinimalDenom": "ubbn",
-            "coinIbcDenom": "ibc/343182F79E6450836403252D1122288D480605885A01426085859B43F5ECD3EF",
-            "coinDecimals": 6,
-            "coinGeckoId": "cosmos",
-            "canSwap": false,
-            "isFeeCurrency": true,
-            "isStakeCurrency": false,
-            "canWithdraw": true,
-            "canDeposit": true,
-            "canUseLiquidityMining": true,
-            "canUseLeverageLP": true,
-            "canUsePerpetual": false,
-            "canUseVaults": true,
-            "gasPriceStep": {
-                "low": 0.007,
-                "average": 0.007,
-                "high": 0.01
-            },
-            "cc": {
-                "quote": "USDT",
-                "exchange": "binance"
-            }
-        }
-    ]
+  "chainId": "bbn-1",
+  "chainName": "Babylon",
+  "addressPrefix": "bbn",
+  "rpcURL": "https://babylon.nodes.guru/rpc",
+  "restURL": "https://babylon.nodes.guru/api",
+  "explorerURL": {
+    "transaction": "https://www.mintscan.io/babylon/transactions/{transaction}"
+  },
+  "channel": {
+    "source": "channel-22",
+    "destination": "channel-6"
+  },
+  "currencies": [
+    {
+      "coinDenom": "BABY",
+      "coinDisplayDenom": "BABY",
+      "coinMinimalDenom": "ubbn",
+      "coinIbcDenom": "ibc/343182F79E6450836403252D1122288D480605885A01426085859B43F5ECD3EF",
+      "coinDecimals": 6,
+      "coinGeckoId": "cosmos",
+      "canSwap": true,
+      "isFeeCurrency": true,
+      "isStakeCurrency": false,
+      "canWithdraw": true,
+      "canDeposit": true,
+      "canUseLiquidityMining": true,
+      "canUseLeverageLP": true,
+      "canUsePerpetual": false,
+      "canUseVaults": true,
+      "gasPriceStep": {
+        "low": 0.007,
+        "average": 0.007,
+        "high": 0.01
+      },
+      "cc": {
+        "quote": "USDT",
+        "exchange": "binance"
+      }
+    }
+  ]
 }
