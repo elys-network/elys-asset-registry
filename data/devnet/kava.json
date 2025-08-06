@@ -9,8 +9,8 @@
     "transaction": "https://www.mintscan.io/kava/transactions/{transaction}"
   },
   "channel": {
-    "source": "channel-13",
-    "destination": "channel-156"
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {

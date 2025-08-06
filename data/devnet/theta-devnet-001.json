@@ -4,9 +4,12 @@
   "addressPrefix": "cosmos",
   "rpcURL": "https://rpc.sentry-02.theta-testnet.polypore.xyz",
   "restURL": "https://rest.sentry-02.theta-testnet.polypore.xyz",
-
   "explorerURL": {
     "transaction": "https://testnet.mintscan.io/cosmoshub-testnet/txs/{transaction}"
+  },
+  "channel": {
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {

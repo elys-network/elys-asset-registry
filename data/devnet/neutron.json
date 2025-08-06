@@ -9,8 +9,8 @@
     "transaction": "https://www.mintscan.io/neutron/transactions/{transaction}"
   },
   "channel": {
-    "source": "channel-16",
-    "destination": "channel-6476"
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {

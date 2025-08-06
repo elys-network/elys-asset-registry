@@ -9,8 +9,8 @@
     "transaction": "https://www.mintscan.io/osmosis/tx/{transaction}"
   },
   "channel": {
-    "source": "channel-6",
-    "destination": "channel-91017"
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {

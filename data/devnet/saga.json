@@ -9,8 +9,8 @@
     "transaction": "https://www.mintscan.io/saga/tx/{transaction}"
   },
   "channel": {
-    "source": "channel-9",
-    "destination": "channel-35"
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {

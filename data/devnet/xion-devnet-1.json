@@ -4,13 +4,12 @@
   "addressPrefix": "xion",
   "rpcURL": "https://rpc-xion.ottersync.io",
   "restURL": "https://api-xion.ottersync.io",
-
   "explorerURL": {
     "transaction": "https://xion.explorers.guru/transaction/{transaction}"
   },
   "channel": {
-    "source": "channel-8",
-    "destination": "channel-9"
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {

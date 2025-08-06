@@ -9,8 +9,8 @@
     "transaction": "https://celenium.io/tx/{transaction}"
   },
   "channel": {
-    "source": "channel-4",
-    "destination": "channel-50"
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {

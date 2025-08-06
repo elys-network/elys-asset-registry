@@ -4,13 +4,12 @@
   "addressPrefix": "agoric",
   "rpcURL": "https://main.rpc.agoric.net:443",
   "restURL": "https://main.api.agoric.net:443",
-
   "explorerURL": {
     "transaction": "https://www.mintscan.io/agoric/tx/{transaction}"
   },
   "channel": {
-    "source": "channel-12",
-    "destination": "channel-152"
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {

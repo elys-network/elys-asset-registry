@@ -9,8 +9,8 @@
     "transaction": "https://mainnet.itrocket.net/mantra/transaction/{transaction}"
   },
   "channel": {
-    "source": "channel-11",
-    "destination": "channel-5"
+    "source": "",
+    "destination": ""
   },
   "currencies": [
     {
